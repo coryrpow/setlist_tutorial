@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+@prince = Artist.create!(name: "Prince")
+@purple = @prince.songs.create!(title: "Purple Rain", length: 111, play_count: 444)
+@beret = @prince.songs.create!(title: "Raspberry Beret", length: 211, play_count: 484)
